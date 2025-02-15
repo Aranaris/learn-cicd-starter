@@ -15,7 +15,7 @@ func TestGetAPIKey(t *testing.T) {
 	}
 
 	testHeader := make(http.Header)
-	testHeader.Add("Authorization", "ApiKeyasdf")
+	testHeader.Add("Authorization", "ApiKey asdf")
 
 	tests := []test{
 		{name: "Check for ApiKey in Header", input: testHeader, expected: "asdf"},

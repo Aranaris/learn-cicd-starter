@@ -6,11 +6,10 @@ import (
 	"testing"
 )
 
-
 func TestGetAPIKey(t *testing.T) {
-	type test struct{
-		name string
-		input http.Header
+	type test struct {
+		name     string
+		input    http.Header
 		expected string
 	}
 

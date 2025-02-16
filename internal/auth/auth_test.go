@@ -24,7 +24,7 @@ func TestGetAPIKey(t *testing.T) {
 		actual, err := GetAPIKey(testHeader)
 		t.Logf("Running test %s...", tc.name)
 		if err != nil {
-			t.Logf("Test Failed: %v", err)
+			t.Fatalf("Test Failed: %v", err)
 		}
 		if !reflect.DeepEqual(tc.expected, actual) {
 			t.Fatalf("expected: %v, got: %v", tc.expected, actual)
